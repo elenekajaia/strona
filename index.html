@@ -1,0 +1,333 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand ms-auto" href="#">Portfolio</a> <!-- Added 'ms-auto' class -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+      
+          <li class="nav-item">
+            <a class="nav-link" href="#projektyIT">Projekty IT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projektyGraficzne">Projekty Graficzne</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Kalkulator">Kalkulator oferty</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Omnie">O mnie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About section -->
+    <section id="stronaGlowna">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+        <h2>Hej, jestem Elene
+          studentka informatyki 
+          w Poznaniu.</h2>
+        <p>Znajdziesz tu opis mojej osoby i to czym się zajmuję. Dowiesz się również nad jakimi projektami pracowałam. Z kolei w moim CV znajdziesz opis moich umiejętności i kompetencji.</p>
+        <div class="col-md-6">
+          <img src="Elena.jpg" alt="YourImage" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  
+      <button id="popupButton" class="btn btn-primary">Skontaktuj się ze mną</button>
+      <div id="popupForm" class="popup-form">
+        <h3>Kontakt</h3>
+        <form>
+          <div class="form-group">
+            <label for="popupName">Imię</label>
+            <input type="text" class="form-control" id="popupName" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="popupEmail">Email</label>
+            <input type="email" class="form-control" id="popupEmail" placeholder="Your email">
+          </div>
+          <div class="form-group">
+            <label for="popupMessage">Wiadomość</label>
+            <textarea class="form-control" id="popupMessage" rows="5" placeholder="Your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Wyślij</button>
+          <button type="button" id="closeButton" class="btn btn-secondary">Zamknij</button>
+        </form>
+      </div>
+      </div>
+    </section>
+
+   
+
+
+<!-- Projekty IT -->
+<section id="projektyIT">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <div class="container">
+    <h2>Projekty IT</h2>
+    <p>Są tutaj projekty z obszaru IT, które wykonałam podczas moich studiów na uczelni Collegium Da Vinci.</p>
+
+
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="square">
+            <img src="snaky_.gif" alt="Animated GIF" width="330" height="400">
+            <div class="caption">
+              <h3>Snake AI</h3>
+              <p>Sztuczna inteligencja w postaci samo-uczącego się węża</p>
+              <a href="https://github.com/elenekajaia/Snake_AI" class="btn btn-primary" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="square">
+            <img src="restauracja.png" alt="Project 2" width="330" height="400">
+            <div class="caption">
+              <h3>Obiektowy system zarządzania restauracją</h3>
+              <p>Restauracja w konsoli</p>
+              <a href="https://github.com/elenekajaia/Restauracja-OOP" class="btn btn-primary" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="square">
+            <img src="aplikacja bankowa.png" alt="Project 3" width="330" height="400">
+            <div class="caption">
+              <h3>Aplikacja bankowa </h3>
+              <p>Strona bankowa</p>
+              <a href="https://github.com/elenekajaia/Aplikacja_bankowa" class="btn btn-primary" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="square">
+            <img src="szyfr.png" alt="Project 4" width="330" height="400">
+            <div class="caption">
+              <h3>Szyfr Vigenère</h3>
+              <p>Strona do szyfrowania i deszyfrowywania szyfrem Vigenere</p>
+              <a href="https://github.com/elenekajaia/bezpieczenstwo_szyfr_Vigenere" class="btn btn-primary" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Navigation Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  </section>
+
+
+
+<script>
+  // Initialize Swiper
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+
+
+
+
+
+    <!-- Projekty Graficzne -->
+    <section id="projektyGraficzne">
+      <div class="container">
+        <h2>Projekty Graficzne</h2>
+        <p>Są tutaj projekty zgraficzne, które wykonałam podczas moich studiów na uczelni Collegium Da Vinci i nie tylko.</p>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="square">
+              <img src="bank.jpg" alt="Project 1" width="330" height="400">
+              <div class="caption">
+                <h3>Aplikacja bankowa</h3>
+                <p>Design aplikacji bankowej wykonany w Figmie</p>
+                <a href="https://www.behance.net/gallery/173898757/Strona-aplikacji-bankowej" class="btn btn-primary" target="_blank">Behance</a>
+    
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="square">
+              <img src="watch.jpg" alt="Project 2" width="330" height="400">
+              <div class="caption">
+                <h3>Strona z zegarkami</h3>
+                <p>Strona sklepu sprzedającego zegarki z wyższej półki</p>
+                <a href="https://www.behance.net/gallery/173898453/Luxury-watch-shop-design-for-a-university-project" class="btn btn-primary" target="_blank">Behance</a>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="square">
+              <img src="lowpoly (1).jpg" alt="Project 3" width="330" height="400">
+              <div class="caption">
+                <h3>Creepy house</h3>
+                <p>Dom w stylu Halloween wykonany w wersji low-poly</p>
+                <a href="https://www.behance.net/gallery/173898321/Low-poly-3D-Creepy-House-in-Blender" class="btn btn-primary" target="_blank">Behance</a>
+    
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="square">
+              <img src="menu.jpg" alt="Project 4" width="330" height="400">
+              <div class="caption">
+                <h3>Menu</h3>
+                <p>Minimalistyczne menu restauracji</p>
+                <a href="https://www.behance.net/gallery/101882119/Menu-for-a-restaurant-Minimal" class="btn btn-primary" target="_blank">Behance</a>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- Kalkulator stawki -->
+<section id="Kalkulator">
+  <div class="container">
+    <h2>Kalkulator</h2>
+    <form id="calculatorForm">
+      <div class="form-group">
+        <label for="programmingHours">Godzina programowania - 50 zł</label>
+        <input type="number" class="form-control" id="programmingHours" placeholder="Enter programming hours" min="0" step="1">
+      </div>
+      <div class="form-group">
+        <label for="graphicDesignHours">Godzina wykonania grafik - 40 zł</label>
+        <input type="number" class="form-control" id="graphicDesignHours" placeholder="Enter graphic design hours" min="0" step="1">
+      </div>
+      <div class="form-group">
+        <label for="totalPrice">Total Price:</label>
+        <input type="text" class="form-control" id="totalPrice" readonly>
+      </div>
+      <button type="button" class="btn btn-primary" onclick="calculateTotalPrice()">Calculate</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  function calculateTotalPrice() {
+    var programmingHours = parseFloat(document.getElementById("programmingHours").value);
+    var graphicDesignHours = parseFloat(document.getElementById("graphicDesignHours").value);
+
+    // Calculate the price per hour for programming and graphic design
+    var programmingPricePerHour = 50; // Adjust this value according to your pricing
+    var graphicDesignPricePerHour = 40; // Adjust this value according to your pricing
+
+    // Calculate the total price based on the input hours
+    var totalPrice = programmingHours * programmingPricePerHour + graphicDesignHours * graphicDesignPricePerHour;
+
+    // Update the total price field
+    document.getElementById("totalPrice").value = totalPrice.toFixed(2); // Display the total price with two decimal places
+  }
+</script>
+
+
+
+
+
+  
+ <!-- O mnie -->
+<section id="Omnie">
+  <div class="container">
+    <h2>Trochę o mnie</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>
+          Przeprowadziłam się z Gruzji do Polski 6 lat temu. Aktualnie jestem  studentką informatyki i poszukuję  możliwości rozwoju  kariery w tym obszarze. 
+          Bardzo cenię różnorodność, dlatego chciałabym pracować w międzynarodowym środowisku. 
+          Kiedy nie siedzę przy komputerze można mnie znalezć przed obiektywem na sesjach zdjęciowych albo za obiektywem, nagrywając filmy techniką animacji poklatkowej.
+           Pasjonuję się także językami - mówię na 4 językach. Mam wieloletnie doświadczenie pracy w biurze tłumaczeń oraz w tłumaczeniach sądowych.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="Vvvi-28.jpg" alt="Elena" style="max-width: 100%; height: auto;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Contact section with a form -->
+    <section id="contact">
+      <div class="container">
+        <h2>Kontakt</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Imię</label>
+            <input type="text" class="form-control" id="name" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your email">
+          </div>
+          <div class="form-group">
+            <label for="message">Wiadomość</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Wyślij</button>
+        </form>
+        <div class="social-icons">
+          <a href="https://https://www.linkedin.com/in/elenekajaia/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/elenekajaia?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.behance.net/elenekajai69f3?tracking_source=search_users|elene%20kajaia" target="_blank"><i class="fab fa-behance"></i></a>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Include Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+  <script>
+    // JavaScript code for the popup functionality
+    document.getElementById("popupButton").addEventListener("click", function() {
+      document.getElementById("popupForm").style.display = "block";
+    });
+
+    document.getElementById("closeButton").addEventListener("click", function() {
+    document.getElementById("popupForm").style.display = "none";
+  });
+  </script>
+</body>
+</html>
